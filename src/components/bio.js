@@ -33,15 +33,15 @@ const Bio = () => {
     }
   `)
 
-  // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
+  // // Set these values by editing "siteMetadata" in gatsby-config.js
+  // const author = data.site.siteMetadata?.author
+  // const social = data.site.siteMetadata?.social
 
-  const avatar = data?.avatar?.childImageSharp?.fixed
+  // const avatar = data?.avatar?.childImageSharp?.fixed
 
   return (
     <div className="bio">
-      {avatar && (
+      {/* {avatar && (
         <Image
           fixed={avatar}
           alt={author?.name || ``}
@@ -50,8 +50,8 @@ const Bio = () => {
             borderRadius: `50%`,
           }}
         />
-      )}
-      {author?.name && (
+      )} */}
+      {/* {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
@@ -59,7 +59,7 @@ const Bio = () => {
             You should follow them on Twitter
           </a>
         </p>
-      )}
+      )} */}
     </div>
   )
 }
