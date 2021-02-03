@@ -71,7 +71,12 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito|Arbutus+Slab"
+      />
+    </Helmet>
   )
 }
 
