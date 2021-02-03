@@ -1,3 +1,7 @@
 .main-heading {
   color: var(--color-dark-green);
 }
+
+.main-content {
+  height: calc(100vh - 315px);
+}
