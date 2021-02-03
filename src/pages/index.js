@@ -5,6 +5,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import siteSettings from "../../content/data/settings.json"
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
@@ -14,7 +16,7 @@ const BlogIndex = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-        <p>Coming Soon...</p>
+        <p>{siteSettings.site_subtitle}</p>
       </Layout>
     )
   }

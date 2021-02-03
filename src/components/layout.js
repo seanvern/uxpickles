@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import "./layout.css"
 
+import siteSettings from "../../content/data/settings.json"
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
@@ -11,13 +13,13 @@ const Layout = ({ location, title, children }) => {
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        <Link to="/">{title}</Link>
+        <Link to="/">{siteSettings.site_title}</Link>
       </h1>
     )
   } else {
     header = (
       <Link className="header-link-home" to="/">
-        {title}
+        {siteSettings.site_title}
       </Link>
     )
   }
