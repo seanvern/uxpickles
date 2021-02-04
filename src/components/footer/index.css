@@ -2,3 +2,23 @@
   height: 200px;
   background-color: var(--color-lightest-green);
 }
+
+.custom-shape-divider-bottom-1612459485 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1612459485 svg {
+  position: relative;
+  display: block;
+  width: calc(110% + 1.3px);
+  height: 48px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1612459485 .shape-fill {
+  fill: #ccebad;
+}
