@@ -1,11 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Post = post => {
-  const title = post.frontmatter.title || post.fields.slug
+import "./index.scss"
+
+const Post = ({ post: post }) => {
+  // const title = post.frontmatter.title || post.fields.slug
   return (
-    <li key={post.fields.slug}>
-      <article
+    <li className="post-container" key={post.title}>
+      <div className="post-title">{post.title}</div>
+      {/* <article
         className="post-list-item"
         itemScope
         itemType="http://schema.org/Article"
@@ -26,7 +29,7 @@ const Post = post => {
             itemProp="description"
           />
         </section>
-      </article>
+      </article> */}
     </li>
   )
 }

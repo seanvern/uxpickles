@@ -2,6 +2,8 @@
   color: var(--color-dark-green);
 }
 
-.main-content {
-  height: calc(100vh - 315px);
+.global-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }

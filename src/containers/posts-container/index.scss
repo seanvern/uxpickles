@@ -1,0 +1,33 @@
+.posts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .posts-heading {
+    font-family: var(--fontFamily-heading);
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 100%;
+    padding-left: 300px;
+  }
+  .posts-container {
+    display: grid;
+    height: 100%;
+    padding: 50px;
+    grid-gap: 60px;
+    grid-auto-flow: column;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 500px 500px;
+  }
+
+  .load-more {
+    align-self: center;
+    width: 200px;
+    height: 50px;
+  }
+}

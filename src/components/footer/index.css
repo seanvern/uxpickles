@@ -1,3 +1,7 @@
+.footer-wrapper {
+  flex-shrink: 0;
+}
+
 .footer-container {
   height: 200px;
   background-color: var(--color-lightest-green);

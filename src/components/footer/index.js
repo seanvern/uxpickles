@@ -3,7 +3,7 @@ import "./index.css"
 
 const Footer = () => {
   return (
-    <>
+    <div className="footer-wrapper">
       <div class="custom-shape-divider-bottom-1612459485">
         <svg
           data-name="Layer 1"
@@ -18,7 +18,7 @@ const Footer = () => {
         </svg>
       </div>
       <div className="footer-container"></div>
-    </>
+    </div>
   )
 }
 

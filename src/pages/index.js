@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import PostsContainer from "../containers/posts-container/index.js"
 import SEO from "../components/seo"
 
 import Hero from "../components/hero-component"
