@@ -71,6 +71,7 @@
   --color-warm-dark-green: #3d6022;
   --color-warm-light-green: #73a145;
   --color-warm-lightest-green: #c8dfa3;
+  --defaultPadding: 0px 10rem 0px 10rem;
 }
 
 /* HTML elements */
@@ -113,8 +114,8 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  margin-top: var(--spacing-12);
-  margin-bottom: var(--spacing-6);
+  /* margin-top: var(--spacing-12); */
+  /* margin-bottom: var(--spacing-6); */
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
 }
@@ -240,22 +241,11 @@ table thead tr th {
 
 /* Link */
 
-a {
-  color: var(--color-primary);
-}
-
+a,
 a:hover,
 a:focus {
   text-decoration: none;
 }
-
-/* Custom classes */
-
-/* .global-wrapper {
-  margin: var(--spacing-0) auto;
-  max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
-} */
 
 .global-wrapper[data-is-root-path="true"] .bio {
   margin-bottom: var(--spacing-20);

@@ -1,10 +1,10 @@
 import React from "react"
-import "./index.scss"
+import "../../styles/hero.scss"
 
 const Hero = () => {
   return (
     <>
-      <div className="hero-container">
+      <div className="heroWrapper">
         <div className="hero-text-container">
           <h1>Newly Brinded</h1>
           <div>

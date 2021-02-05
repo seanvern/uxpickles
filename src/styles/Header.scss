@@ -1,0 +1,33 @@
+.headingWrapper {
+  display: flex;
+  background-color: var(--color-lightest-green);
+  color: black;
+  border: 1px solid red;
+  padding: var(--defaultPadding);
+
+  .logoWrapper {
+    border: 1px solid red;
+    width: 100%;
+    .logoTitle {
+      margin: 0;
+      border: 1px solid green;
+      font-family: var(--fontFamily-sans);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.linkWrapper {
+  display: flex;
+  border: 1px solid red;
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+}
+.link-item {
+  font-size: var(--fontSize-1);
+  text-transform: uppercase;
+  font-weight: bold;
+}

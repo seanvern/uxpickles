@@ -1,16 +1,18 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import SiteWrapper from "../components/siteWrapper/SiteWrapper"
 
-import Hero from "../components/hero-component"
+import Hero from "../components/hero/Hero"
+import PostsContainer from "../components/postsWrapper/PostsWrapper"
 
 const BlogIndex = ({ data, location }) => {
   return (
-    <Layout location={location} data={data}>
+    <SiteWrapper location={location} data={data}>
       <Hero />
+      <PostsContainer data={data} />
       {/* <SEO title="All posts" /> */}
-    </Layout>
+    </SiteWrapper>
   )
 }
 
@@ -23,6 +25,9 @@ export const query = graphql`
         node {
           id
           excerpt
+          fields {
+            slug
+          }
           frontmatter {
             date
             title

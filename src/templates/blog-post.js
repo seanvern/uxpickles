@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import Layout from "../components/layout"
+import SiteWrapper from "../components/siteWrapper/SiteWrapper"
 import SEO from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
@@ -11,8 +11,9 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO
+    <SiteWrapper location={location} title={siteTitle}>
+      TEST
+      {/* <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
@@ -59,8 +60,8 @@ const BlogPostTemplate = ({ data, location }) => {
             )}
           </li>
         </ul>
-      </nav>
-    </Layout>
+      </nav> */}
+    </SiteWrapper>
   )
 }
 

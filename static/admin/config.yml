@@ -18,6 +18,26 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "about"
+    label: "About Settings"
+    folder: "content/about"
+    create: true
+    slug: "/about"
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "About Me", name: "body", widget: "markdown" }
+  - name: "contact"
+    label: "Contact Settings"
+    folder: "content/contact"
+    create: true
+    slug: "/contact"
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
   - name: "settings"
     label: "Settings"
     delete: false
@@ -29,3 +49,16 @@ collections:
         fields:
           - { label: "Heading", name: "site_title", widget: "string" }
           - { label: "Subheading", name: "site_subtitle", widget: "string" }
+  - name: "hero-settings"
+    label: "Hero Settings"
+    delete: false
+    preview: false
+    files:
+      - label: "Hero Blog Settings"
+        name: "Hero Blog Settings"
+        file: content/data/hero-settings.json
+        fields:
+          - { label: "Blog Slug", name: "blog_slug", widget: "string" }
+          - { label: "Heading", name: "hero_heading", widget: "string" }
+          - { label: "Description", name: "hero_body", widget: "markdown" }
+          - { label: "Featured Image", name: "hero_image", widget: "image" }

@@ -2,7 +2,7 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import SiteWrapper from "../components/siteWrapper/SiteWrapper"
 import SEO from "../components/seo"
 
 type DataProps = {
@@ -16,7 +16,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
   path,
   location,
 }) => (
-  <Layout title="Using TypeScript" location={location}>
+  <SiteWrapper title="Using TypeScript" location={location}>
     <SEO title="Using TypeScript" />
     <h1>Gatsby supports TypeScript by default!</h1>
     <p>
@@ -40,7 +40,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
       .
     </p>
     <Link to="/">Go back to the homepage</Link>
-  </Layout>
+  </SiteWrapper>
 )
 
 export default UsingTypescript
