@@ -1,9 +1,17 @@
 .post-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 50px;
   list-style: none;
   border: 3px solid black;
   border-radius: 50px;
+
+  .post-date {
+    font-weight: 800;
+  }
+
+  .post-title {
+    font-size: 24px;
+  }
 }

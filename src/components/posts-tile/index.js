@@ -1,35 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
+
+import Moment from "react-moment"
 
 import "./index.scss"
 
-const Post = ({ post: post }) => {
-  // const title = post.frontmatter.title || post.fields.slug
+const Post = ({ post }) => {
+  const title = post.node.frontmatter.title
+  const excerpt = post.node.excerpt
+  const date = post.node.frontmatter.date
   return (
-    <li className="post-container" key={post.title}>
-      <div className="post-title">{post.title}</div>
-      {/* <article
-        className="post-list-item"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h2>
-            <Link to={post.fields.slug} itemProp="url">
-              <span itemProp="headline">{title}</span>
-            </Link>
-          </h2>
-          <small>{post.frontmatter.date}</small>
-        </header>
-        <section>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: post.frontmatter.description || post.excerpt,
-            }}
-            itemProp="description"
-          />
-        </section>
-      </article> */}
+    <li className="post-container">
+      <div className="post-date">
+        <Moment format="MM/DD/YYYY">{date}</Moment>
+      </div>
+      <div className="post-title">{title}</div>
+      <div className="post-details">{excerpt}</div>
     </li>
   )
 }
