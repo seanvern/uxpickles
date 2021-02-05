@@ -1,0 +1,32 @@
+.main-heading {
+  display: flex;
+  background-color: var(--color-lightest-green);
+  color: black;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-left: 100px;
+  font-family: var(--fontFamily-sans);
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: center;
+  margin-top: 24px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 15%;
+  margin-right: 70px;
+}
+.link-item {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
