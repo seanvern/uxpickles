@@ -56,9 +56,14 @@ collections:
     files:
       - label: "Hero Blog Settings"
         name: "Hero Blog Settings"
-        file: content/data/hero-settings.json
+        file: content/data/hero/hero-settings.json
         fields:
           - { label: "Blog Slug", name: "blog_slug", widget: "string" }
           - { label: "Heading", name: "hero_heading", widget: "string" }
           - { label: "Description", name: "hero_body", widget: "markdown" }
-          - { label: "Featured Image", name: "hero_image", widget: "image" }
+          - {
+              label: "Featured Image",
+              name: "hero_image",
+              widget: "image",
+              media_folder: img/hero,
+            }
